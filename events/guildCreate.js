@@ -14,7 +14,7 @@ const girismesaj = [
 ]
 
 client.on('guildCreate', guild => {
-    const generalChannel = guild.default
+    const general = guild.default
     general.sendMessage(girismesaj)
 	client.user.setGame(prefix + 'yardım | ' + client.guilds.size + ' sunucu | ' + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ' kullanıcı');
 })
