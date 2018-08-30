@@ -13,5 +13,4 @@ module.exports = client => {
 
 
   client.user.setStatus("online");
-client.user.setGame(" 30 AĞUSTOZ ZAFER BAYRAMINIZ KUTLU OLSUN| NE DEMEK ŞAKİR | şakir-yardım " + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://twitch.tv/grmemo");
-}
+client.user.setGame(" 30 AĞUSTOZ ZAFER BAYRAMINIZ KUTLU OLSUN| + client.users.size + " Kullanıcı ", "https://twitch.tv/grmemo"); 
