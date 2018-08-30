@@ -47,10 +47,6 @@ client.on('guildMemberRemove', member => {
     return channel.sendEmbed(bb);
 });
 
-
-
-
-
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
