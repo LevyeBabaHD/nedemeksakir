@@ -14,7 +14,7 @@ exports.run = (client, message, args , msg) => {
     const embed = new Discord.RichEmbed()
     .setThumbnail(message.author.avatarURL)
     .setColor('RANDOM')
-    .setDescription(**${message.author.username} Önerisi)
+    .setDescription(${message.author.username} Önerisi)
     .addField('Kullanıcı Bilgileri', Kullanıcı adı: ${message.author.username}#${message.author.discriminator}\nKullanıcı id: ${message.author.id})
     .addField('Sunucu Adı', message.guild.name)
         .addField('Öneri' , ${mesaj});
