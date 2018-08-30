@@ -6,8 +6,8 @@ const ayarlar = require('../ayarlar.json');
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  console.log([${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!);
-  console.log([${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!);
+  console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
+  console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
-client.user.setGame(" 30 Ağustos Zafer Bayramı kutlu olsun!", "https://twitch.tv/grmemo);
+client.user.setGame("30 AĞUSTOS ZAFER BAYRAMINIZ KUTLU OLSUN " + "https://twitch.tv/grmemo");
 }
