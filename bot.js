@@ -42,6 +42,20 @@ client.on("message", msg => {
         }
     });
 
+client.on("message", msg => {
+        const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç"];
+        if (reklam.some(word => msg.content.includes(word))) {
+          try {
+             if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
+
+                  return msg.reply('Küfür Etmemelisin! :warning:').then(msg => msg.delete(3000));
+             }
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    });
 
 client.reload = command => {
   return new Promise((resolve, reject) => {
