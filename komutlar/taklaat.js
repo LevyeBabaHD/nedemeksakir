@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-	.setImage(`http://www.yenislayt.com//upload/cff434db11.gif`)
+	.setImage(`http://i61.servimg.com/u/f61/15/31/05/29/taklac10.gif`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
