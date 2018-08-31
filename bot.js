@@ -27,6 +27,20 @@ fs.readdir('./komutlar/', (err, files) => {
   });
 });
 
+client.on("message", msg => {
+        const reklam = ["discordapp", "discord.gg", "discord.tk", "discordbots.org", "https://discordapp.com/", "https://discord.gg/", "http://discord.gg/", "htpp:/discordapp.com", "https://discordbots.org/"];
+        if (reklam.some(word => msg.content.includes(word))) {
+          try {
+             if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
+
+                  return msg.reply('Reklam Yapma Güzel KARDEŞİM! :warning:').then(msg => msg.delete(3000));
+             }
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    });
 
 
 client.reload = command => {
