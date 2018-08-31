@@ -1,4 +1,5 @@
-const { Command } = require('discord.js-commando');
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 module.exports = class JoinRoleCommand extends Command {
 	constructor(client) {
