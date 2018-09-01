@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('İşte Yenilikler: | Küfür Engeli Reklam Engeli Eklendi Beta Sürümdedir| \nşakir-8ball = Bota Sordugunuz Soruları Cevaplar  \nşakir-danset = Dans Etmeye Başlarsınız Cuppa Cuppa   \nşakir-kahkaha = Kahkaha Atarsınız  \nşakir-sins-aga Joni Reyis  \nşakir-starwars = Starwars Filminin Pixel Versiyonunu Atar \nşakir-stresçarkı = Stresçarkı Çevirirsiniz  \nşakir-taklaat = Takla Atarsınız  \nşakir-woodie = Oduncu  \nşakir-yazıtura = Yazı Tura Atarsınız \nşakir-şanslısayım '); 
+    .setDescription('İşte Yenilikler: | Küfür Engeli Reklam Engeli Eklendi Beta Sürümdedir| \nşakir-8ball = Bota Sordugunuz Soruları Cevaplar  \nşakir-danset = Dans Etmeye Başlarsınız Cuppa Cuppa   \nşakir-kahkaha = Kahkaha Atarsınız  \nşakir-sins-aga Joni Reyis  \nşakir-starwars = Starwars Filminin Pixel Versiyonunu Atar \nşakir-stresçarkı = Stresçarkı Çevirirsiniz  \nşakir-taklaat = Takla Atarsınız  \nşakir-woodie = Oduncu  \nşakir-yazıtura = Yazı Tura Atarsınız \nşakir-şanslısayım = Şanslı Sayınızı Söyler '); 
     return message.author.sendEmbed(pingozel)
 };
 
