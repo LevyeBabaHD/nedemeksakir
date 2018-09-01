@@ -43,7 +43,7 @@ client.on("message", msg => {
     });
 
 client.on("message", msg => {
-        const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç"];
+        const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç" "sq" "amq" "moruk" "yarrak" "anan" "anneni sikerim" "amcıgını sikerim" "ebeni deşerim" "ananın amına torpil atarım" "aq"  ];
         if (reklam.some(word => msg.content.includes(word))) {
           try {
              if (!msg.member.hasPermission("BAN_MEMBERS")) {
