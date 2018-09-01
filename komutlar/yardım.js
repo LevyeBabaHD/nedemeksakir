@@ -12,7 +12,7 @@ exports.run = (client, message, params) => {
   .addField("**Sunucu Yetkilisi Komutları**", `şakir-ban = İstediğiniz Kişiyi Sunucudan Banlar. \nşakir-kick  = İstediğiniz Kişiyi Sunucudan Atar. \nşakir-unban = İstediğiniz Kişinin Yasağını Açar. \nşakir-sustur = İstediğiniz Kişiyi Susturur. -MUTED- \nşakir-oylama = Oylama Açar. \nşakir-duyurbot = Güzel Bir Duyuru Görünümü Sağlar.`)
   .addField("**Botun Ana Komutları**", "şakir-yardım = BOT Komutlarını Atar. \şakir-bilgi = BOT Kendisi Hakkında Bilgi Verir. \nşakir-ping = BOT Gecikme Süresini Söyler. \nşakir-davet = BOT Davet Linkini Atar. \nk!istatistik = BOT İstatistiklerini Atar. \nşakir-yenilikler = Yenilikleri Görürsünüz**")
   .addField("**Gizli Komutlar:**", " **herkese çay = Dene Ve Gör \npeki şakire çay yok= Dene Ve Gör \nadınımı değiştirdin = Dene Ve Gör\nne diyem mahmutmu diyem şakir = Dene Ve Gör\no günler bitti şakir= Dene Ve Gör\nşakir = Denede Gör\nşakir bi sus\ Dene Ve Gör**   ")
-  .setFooter('**Beni Yaratan =ＬＥＶＹＥ#8336**  ')
+  .setFooter('**Beni Yaratan =LeVyEBasKaN ✘#8336**  ')
 
 
   if (!params[0]) {
