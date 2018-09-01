@@ -43,7 +43,7 @@ client.on("message", msg => {
     });
 
 client.on("message", msg => {
-        const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç" ];
+        const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç", "aq", "sikik", "siqiq", "götoş", "amk salağı", "sokuk", "piç", "anneni sikeyim", "amını sikeyim", "ebeni sikeyim", "mk",  "amk veledi",  ];
         if (reklam.some(word => msg.content.includes(word))) {
           try {
              if (!msg.member.hasPermission("BAN_MEMBERS")) {
@@ -57,25 +57,27 @@ client.on("message", msg => {
         }
     });
 
-client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'hosgeldin');
-  if (!channel) return;
-    const hg = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setDescription('Sunucuya yeni biri katıldı hoşgeldin! ' + `${member}`);
-    return channel.sendEmbed(hg);
-});
 
-client.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find('name', 'hosgeldin');
-  if (!channel) return;
-     const bb = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setThumbnail(member.user.displayAvatarURL)
-    .setDescription('Sunucudan ' + `${member} ` + 'ayrıldı güle güle!');
-    return channel.sendEmbed(bb);
-});
+
+client.on("message", msg => {
+        const reklam = ["yarrak",];
+        if (reklam.some(word => msg.content.includes(word))) {
+          try {
+             if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
+
+                  return msg.reply('SANA GİRSİN :sunglasses: ').then(msg => msg.delete(3000));
+             }
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    });
+
+
+
+
+
 
 client.reload = command => {
   return new Promise((resolve, reject) => {
@@ -96,6 +98,7 @@ client.reload = command => {
     }
   });
 };
+
 
 client.load = command => {
   return new Promise((resolve, reject) => {
