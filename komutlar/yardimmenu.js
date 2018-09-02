@@ -51,7 +51,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yardım',
+  name: 'hyardım',
   description: 'Yardım komutlarını görüntüler.',
-  usage: 'yardım'
+  usage: 'hyardım'
 };
