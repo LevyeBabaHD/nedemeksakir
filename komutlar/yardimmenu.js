@@ -46,7 +46,7 @@ exports.run = (client,message,args,tools) => {
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['Yardım' , 'yardim' , 'y' , 'help' , 'helps'],
+  aliases: ['Yardım' , 'yardim' , 'y' , 'help' , 'hyardım' ],
   permLevel: 0
 };
 
