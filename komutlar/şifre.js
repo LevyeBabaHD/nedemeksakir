@@ -25,7 +25,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'şifre', 
-  description: 'Rastgele bir şifre oluşturur.',
-  usage: 'şifre <uzunluk>'
+  name: 'wifişifreoluştur', 
+  description: 'wifi şifre oluşturur.',
+  usage: 'wifişifreoluştur <uzunluk>'
 };
