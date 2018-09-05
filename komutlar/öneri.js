@@ -18,7 +18,7 @@ exports.run = function(client, message, args) {
 			.addField("ID", message.author.id)
 			.addField("Öneri", öneri)
 		
-		client.guilds.get(guildID). channel.get(483746573700956193).send(embed);
+		client.guilds.get(guildID)(483746573700956193).send(embed);
 		message.channel.send("Öneriniz alınmıştır! Teşekkür ederiz.");
 	};
 
