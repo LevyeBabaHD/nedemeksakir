@@ -139,7 +139,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sigara ic') {
-     msg.reply('Sigara İçiyorum!');
+     msg.channelsend('Sigara İçiyorum!');
       msg.edit(' :smoking: :cloud: :cloud: :cloud: ');
       msg.edit(' :smoking: :cloud: :cloud: ');
       msg.edit(' :smoking: :cloud:  ');
@@ -213,7 +213,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'şakir-parti') {
-    msg.reply(':1: :2: :3: :4:');
+    msg.reply(':1: :2: :3: :4:  1_~1: :1_~1: :1_~1: :1_~1: :1_~1:: ');
   }
 });
 
