@@ -183,6 +183,42 @@ client.on('message', msg => {
     msg.reply('Susuyorum Ulen Sen Konuş Ciğerim :smile:');
   }
 });
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    msg.reply('Aleykümselam Ciğerim Hoşgeldin Ciğerim');
+  }
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'selamun aleyküm') {
+    msg.reply('Aleykümselam Ciğerim Hoşgeldin Ciğerim');
+  }
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'selamün aleyküm') {
+    msg.reply('Aleykümselam Ciğerim Hoşgeldin Ciğerim');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'selamunaleyküm') {
+    msg.reply('Aleykümselam Ciğerim Hoşgeldin Ciğerim');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sea') {
+    msg.reply('Aleykümselam Ciğerim Hoşgeldin Ciğerim');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'şakir-parti') {
+    msg.reply(':1: :2: :3: :4:');
+  }
+});
+
+
+
 
 client.elevation = message => {
   if(!message.guild) {
