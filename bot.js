@@ -213,7 +213,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'şakir-parti') {
-    msg.reply(':1_: :2_: :3_: :4_:  ');
+    msg.reply('<a :1_:396776920152408064> ');
   }
 });
 
