@@ -3,8 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, args) => {
   message.channel.send(':clock1: | Fotoğraf Yükleniyor..')
-  köpek1 = "./img/hav1.jpg"; köpek2 = "./img/hav2.jpg"; köpek3 = "./img/hav3.jpg"; köpek4 = "./img/hav4.png"; köpek5 = "./img/hav
-  hav5.jpg"; köpek6 = "img/hav6.jpg";
+  köpek1 = "./img/hav1.jpg"; köpek2 = "./img/hav2.jpg"; köpek3 = "./img/hav3.jpg"; köpek4 = "./img/hav4.png"; köpek5 = "./img/hav5"; köpek6 = "img/hav6.jpg";
     number = 3,2,4,1,5,6
     var random = Math.floor(Math.random() * (number - 1 + 1)) + 1; 
     switch(random) {
