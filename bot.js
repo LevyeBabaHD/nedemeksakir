@@ -144,7 +144,7 @@ client.on('message', msg => {
       msg.edit(' :smoking: :cloud: :cloud: ');
       msg.edit(' :smoking: :cloud:  ');
       msg.edit(' :smoking:  ');
-      msg.edit(' Sigaram Bitti! ŞAKİR İÇİYO DİYE SİZDE İÇMEYİN KAMU SPOTU :smile: ');
+      msg.edit(' Sigaram Bitti! ŞAKİR İÇİYO DİYE SİZDE İÇMEYİN KAMU SPOTU :smile: :no_smoking:  ');
   }
 });
 
