@@ -136,7 +136,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sigara ic') {
-    msg.channel.send('Sigara İçiyorum!');
+    msg.send('Sigara İçiyorum!');
       msg.edit(' :smoking: :cloud: :cloud: :cloud: ');
       msg.edit(' :smoking: :cloud: :cloud: ');
       msg.edit(' :smoking: :cloud:  ');
