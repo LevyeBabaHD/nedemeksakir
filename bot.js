@@ -174,7 +174,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'şakir') {
-    msg.reply('Efendim Ciğerim');
+    msg.reply('Ne Demek Şakir');
   }
 });
 
