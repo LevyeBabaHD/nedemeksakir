@@ -128,7 +128,49 @@ client.unload = command => {
   });
 };
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'herkese çay') {
+    msg.reply('Şakire Yooh :smile:');
+  }
+});
 
+
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'peki şakire çay yok') {
+    msg.reply('Ne demek Şakir ');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'adınımı değiştirdin') {
+    msg.reply('Sen bana nasıl Şakir dersin lann kelek!');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'ne diyem mahmutmu diyem şakir') {
+    msg.reply('Şakir abi, dayı, ağa diyeceksin!');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'o günler bitti şakir') {
+    msg.reply('Ne Demek Bitti');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'şakir') {
+    msg.reply('Ne Demek Şakir');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'şakir bi sus') {
+    msg.reply('Susuyorum Ulen Sen Konuş Ciğerim :smile:');
+  }
+});
 
 
 
