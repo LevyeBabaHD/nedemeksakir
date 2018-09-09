@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Ben Şakirim Ulan Ben Küfür ETMEM');
+    .setDescription('Devre Dışı');
     return message.author.sendEmbed(pingozel)
 };
 
