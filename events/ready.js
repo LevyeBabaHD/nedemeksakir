@@ -9,5 +9,5 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
-client.user.setGame("şakir-yardım | Bir günlüğüne Kral Şakir Karşınızda|  " + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://open.spotify.com/user/anr7rphecng39l3yuaxxislsf?si=UcuY1PIZR5qZnBDjmkKfhw");
+client.user.setGame("şakir-yardım | Bir günlüğüne Kral Şakir Karşınızda|  " + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://www.twitch.tv/grmemo");
 }
