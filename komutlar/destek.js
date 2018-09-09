@@ -16,7 +16,7 @@ if(!message.member.roles.has(role.id)){
   message.channel.sendMessage('Destekciler! rolü alındı');
 }
         }
-  else if (!voted) return message.channel.send("**Destekçi Rölü İstiyosan Şakire Vote Vermen Gereklidir** https://discordbots.org/bot/484052182975643649/vote");
+  else if (!voted) return message.channel.send("**Destekçi Rölü İstiyosan Şakire Vote Vermen Gereklidir** https://discordbots.org/bot/484052182975643649/vote Bu Komut Destek Sunucusuna Özeldir :https://discord.gg/za87y6");
 })
 };
 
