@@ -81,13 +81,13 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["bunny"],
+  aliases: ["tavşan"],
   permLevel: "0"
 };
 
 exports.help = {
-  name: "bunny",
-  category: "Miscelaneous",
-  description: "Jumpy I go",
-  usage: "bunny"
+  name: "tavşan",
+  category: "tavşan",
+  description: "tavşan",
+  usage: "tavşan"
 };
