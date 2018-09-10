@@ -1,7 +1,6 @@
 {
   "name": "sakir",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.1.1",
   "main": "bot.js",
   "scripts": {
     "test": "node bot.js"
@@ -11,11 +10,11 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "chance": "^1.0.16",
+    "cool-images": "^1.0.1",
     "dblapi.js": "^2.2.0",
     "discord.js": "^11.4.2",
     "discord.js-commando": "^0.10.0",
     "ffmpeg": "0.0.4",
-    "cool-images": "^1.0.1",
     "fortnite": "^4.1.1",
     "generate-password": "^1.4.0",
     "math-expression-evaluator": "^1.2.17",
@@ -25,5 +24,7 @@
     "simple-youtube-api": "^5.0.2",
     "weather-js": "^2.0.0",
     "ytdl-core": "^0.24.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
