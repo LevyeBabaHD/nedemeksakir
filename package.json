@@ -15,6 +15,7 @@
     "discord.js": "^11.4.2",
     "discord.js-commando": "^0.10.0",
     "ffmpeg": "0.0.4",
+    "cool-images": "^1.0.1",
     "fortnite": "^4.1.1",
     "generate-password": "^1.4.0",
     "math-expression-evaluator": "^1.2.17",
