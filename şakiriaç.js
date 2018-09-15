@@ -265,7 +265,7 @@ var presences = [
 
 client.on('ready', () => {
     client.user.setActivity(utils.randItemFromArray(presences)).then(() => {
-        setTimeout((1000) => {
+        setTimeout(() => {
             client.user.setActivity(utils.randItemFromArray(presences))
         }, 1)
     })
