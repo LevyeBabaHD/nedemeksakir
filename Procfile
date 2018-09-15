@@ -1,1 +1,2 @@
-LEVYE node bot.js
+LEVYE node şakiriaç.js
+
