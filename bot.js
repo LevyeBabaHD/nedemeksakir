@@ -149,7 +149,13 @@ client.on("message", async message => {
         });
     }
 });
-
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === prefix + 'kasaaç') {
+    var sans = ["Hiçbirşey :cry:", "Stattrak AWP | Asiimov", "Karambit | Doopler :dagger:", "Hatıra USP-S | Leş Onaylandı", "Kancalı Bıçak | Fade :dagger:", "Desert Eagle | Kızıl Ağ", "Hatıra Dragon Lore", "Stattrak M4A1 | Uluma", "SGG 07 | Sudaki Kan", "Hatıra Glock 18 | Fade", "AWP | Medusa", "Desert Eagle | Alev", "Stattrak AK-47 | Vulkan",  "M4A1-S | Hiper Canavar",  "Hatıra M4A1-S | Altın Bobin", "Statrak AWP | Elektrikli Kovan", "P90 | Ecel Kedisi", "AWP | Yıldırım Çarpması", "Karambit | Mazi :dagger:", "Hatıra Faction Bicaği :dagger:"];
+    var sonuc = sans[Math.floor((Math.random() * sans.length))];
+    msg.channel.sendEmbed(new Discord.RichEmbed().setDescription(`Sana **${sonuc}** Çıktı.`).setTitle('Başarıyla Kasa Açıldı').setThumbnail('https://cdn.discordapp.com/attachments/487719679868272689/488329963926192158/image0.png').setColor('RANDOM'));
+  }
+});
 client.on("message", async message => {
   var user = message.mentions.users.first() || message.author;
     if (message.content.toLowerCase() === prefix + "hpbravery") {		
