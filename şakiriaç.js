@@ -143,6 +143,13 @@ client.on('message', msg => {
   }
 });
   
+var varlıklar = [
+    " Ne Demek Şakir " ,
+    " şakir-kasaaç şakir-döviz " ,
+    " şakir-yardım Tüm Komutlar " ,
+    " Yenilikler şakir-yardım ın En Son Sayfasında " ,
+    " şakir-öneri İle Önerinizi Alabilirim. "
+]
 	
 client.reload = command => {
   return new Promise((resolve, reject) => {
