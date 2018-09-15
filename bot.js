@@ -411,7 +411,19 @@ client.on("message", msg => {
 
 
 
+//Kullanıcı sunucudan ayrıldığında ayarlanan kanala mesaj gönderelim.
+client.on("guildMemberAdd", async (member) => {
+      let sayac = JSON.parse(fs.readFileSync("./ayarlar/sayac.json", "utf8"));
+           member.addRole(role)
 
+  let embed = new Discord.RichEmbed()
+    .setTitle('Sayaç Sistemi')
+    .setDescription(`:inbox_tray: Hoş Geldin :inbox_tray: \n╔▬▬▬▬▬▬▬▬Sayaç▬▬▬▬▬▬▬▬▬\n║►             ${member.user.tag}\n║► Kullanıcı Katıldı \n║► **${sayac[member.guild.id].sayi}** Kişi Olmamıza ➡️ **${sayac[member.guild.id].sayi - member.guild.memberCount}** ⬅️ Kişi Kaldı\n║► Senin Katılmanla Beraber **${member.guild.memberCount}**  Kişiyiz! :inbox_tray:\n╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬`)
+    .setColor("GREEN")
+    .setFooter("LFS TEAM", client.user.avatarURL);
+
+	
+	
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
