@@ -143,14 +143,7 @@ client.on('message', msg => {
   }
 });
   
-var varlıklar = [
-    " Ne Demek Şakir " ,
-    " şakir-kasaaç şakir-döviz " ,
-    " şakir-yardım Tüm Komutlar " ,
-    " Yenilikler şakir-yardım ın En Son Sayfasında " ,
-    " şakir-öneri İle Önerinizi Alabilirim. "
-]
-	
+
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
@@ -257,7 +250,22 @@ client.on('message', msg => {
   }
 });
 
+var presences = [
+    "Ne Demek Şakir",
+    "şakir-kasaaç şakir-döviz",
+    "şakir-yardım n!davet",
+    "Yeni Eklenenler şakir-yardım Son Sayfasında",
+    "Şakiri LevyeBaskan Yarattı"
+]
 
+
+client.on('ready', () => {
+    client.user.setActivity(utils.randItemFromArray(presences)).then(() => {
+        setTimeout(() => {
+            client.user.setActivity(utils.randItemFromArray(presences))
+        }, 1)
+    })
+});
 
 
 
