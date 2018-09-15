@@ -41,7 +41,7 @@ client.on("message", msg => {
           }
         }
     });
-lient.on('message', async message => {
+client.on('message', async message => {
     if (message.content.toLowerCase() === prefix + 'döviz') {
 var request = require('request');
 request('https://www.doviz.com/api/v1/currencies/USD/latest', function (error, response, body) {
