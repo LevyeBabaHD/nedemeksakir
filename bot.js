@@ -101,6 +101,10 @@ client.on("message", async message => {
         });
     }
 });
+client.on('message', async message => {
+    if (message.content.toLowerCase() === prefix + 'saat') {
+      message.channel.send(new Discord.RichEmbed().setDescription(`**:flag_tr: Saati:** ***${moment().format('HH:mm:ss')}***`).setColor('RANDOM').setTitle('Anlık Türkiye Saati'))    }
+})
 
 client.on("message", async message => {
   var user = message.mentions.users.first() || message.author;
