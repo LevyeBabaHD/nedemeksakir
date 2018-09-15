@@ -250,6 +250,10 @@ client.on('message', msg => {
   }
 });
 
+
+var utils = require('bot-utils')
+
+
 var presences = [
     "Ne Demek Şakir",
     "şakir-kasaaç şakir-döviz",
