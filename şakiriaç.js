@@ -196,15 +196,6 @@ client.unload = command => {
   });
 };
 
-var request = require('request');
-
-request('https://api.eggsybot.xyz/espri', function (error, response, body) {
-    if (error) return console.log('Hata:', error); // Hata olursa, konsola göndersin,
-    else if (!error) { // Eğer hata yoksa;
-        var info = JSON.parse(body); // info değişkeninin içerisine JSON'ı ayrıştırsın,
-        console.log(info.soz); // ve konsola çıktıyı versin.
-    }
-});
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'herkese çay') {
@@ -251,25 +242,6 @@ client.on('message', msg => {
 });
 
 
-var utils = require('bot-utils')
-
-
-var presences = [
-    "Ne Demek Şakir",
-    "şakir-kasaaç şakir-döviz",
-    "şakir-yardım n!davet",
-    "Yeni Eklenenler şakir-yardım Son Sayfasında",
-    "Şakiri LevyeBaskan Yarattı"
-]
-
-
-client.on('ready', () => {
-    client.user.setActivity(utils.randItemFromArray(presences)).then(() => {
-        setTimeout(() => {
-            client.user.setActivity(utils.randItemFromArray(presences))
-        }, 1)
-    })
-});
 
 
 
