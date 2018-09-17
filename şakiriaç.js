@@ -144,18 +144,14 @@ client.on('message', msg => {
 });
   
 const snekfetch = require('snekfetch')
-const dbotstoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4NDA1MjE4Mjk3NTY0MzY0OSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTM2NjAwMTQxfQ.OS2TXNujsmH0FpxNbUjdqttoEM1DFLPbDe9ZSzaO2EY"
 
-
-
-client.shard.fetchClientValues('guilds.size').then(result => {
-const guildsizes = result.reduce((prev, val) => prev + val, 0)
-    snekfetch.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
-        .set('Authorization', dbotstoken)
-        .send({"server_count": guildsizes})
-        .then(() => console.log(`dbotsstats updated successfully`))
-        .catch(err => console.error(err))
-})
+setInterval(() => {
+  snekfetch.post(`https://discordbots.org/api/bots/stats`)
+    .set('Authorization', 'YOUR DISCORDBOTS.ORG API TOKEN')
+    .send({ server_count: client.guilds.size })
+    .then(() => console.log('Updated discordbots.org stats.'))
+    .catch(err => console.error(`Whoops something went wrong: ${err.body}`));
+}, 3600000)
 
 client.reload = command => {
   return new Promise((resolve, reject) => {
