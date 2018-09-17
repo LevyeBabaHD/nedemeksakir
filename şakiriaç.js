@@ -147,7 +147,9 @@ const snekfetch = require('snekfetch')
 
 setInterval(() => {
   snekfetch.post(`https://discordbots.org/api/bots/stats`)
-    .set('Authorization', 'YOUR DISCORDBOTS.ORG API TOKEN')
+    .set('Authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4NDA1MjE4Mjk3NTY0MzY0OSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTM2NjAwMTQxfQ.OS2TXNujsmH0FpxNbUjdqttoEM1DFLPbDe9ZSzaO2EY')
+
+
     .send({ server_count: client.guilds.size })
     .then(() => console.log('Updated discordbots.org stats.'))
     .catch(err => console.error(`Whoops something went wrong: ${err.body}`));
