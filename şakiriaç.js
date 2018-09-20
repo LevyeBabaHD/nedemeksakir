@@ -172,6 +172,9 @@ client.on("message", async message => {
 });
 
 if (msg.content.toLowerCase() === prefix + 'sigaraic') {
+
+client.on('message', msg => {
+
     msg.send('Sigara İçiyorum!');
     msg.edit(' :smoking: :cloud: :cloud: :cloud: ');
     msg.edit(' :smoking: :cloud: :cloud: ');
