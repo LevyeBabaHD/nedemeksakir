@@ -171,17 +171,6 @@ client.on("message", async message => {
     }
 });
 
-if (msg.content.toLowerCase() === prefix + 'sigaraic') {
-
-client.on('message', msg => {
-
-    msg.send('Sigara İçiyorum!');
-    msg.edit(' :smoking: :cloud: :cloud: :cloud: ');
-    msg.edit(' :smoking: :cloud: :cloud: ');
-    msg.edit(' :smoking: :cloud:  ');
-    msg.edit(' :smoking:  ');
-    msg.edit(' Sigaram Bitti! Bot İçsin Ama Siz İçmeyin!');
-  }
 
 client.on("message", async message => {
   var user = message.mentions.users.first() || message.author;
