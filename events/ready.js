@@ -9,5 +9,5 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
-client.user.setGame("şakir-yardım | Ne Demek Şakir |  " + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://twitch.tv/grmemo");
+client.user.setGame("şakir-yardım | 100 Sunucu MustafaBaskan Çatlasın 44 Vote Çatlaaaa Patlaaaa MustafaBaskan  |  " + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://twitch.tv/grmemo");
 }
